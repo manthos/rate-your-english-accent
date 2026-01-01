@@ -23,7 +23,7 @@ This document maps the project deliverables to the ML Zoomcamp 2025 Capstone eva
 
 Extensive EDA with class analysis, value ranges, missing values, plus comprehensive feature importance analysis were performed.
 
-**Where to check**: [SpeechAccent_EDA.ipynb](./SpeechAccent_EDA.ipynb) + [Further EDA, Feature Importance and Training Notebook](https://www.kaggle.com/code/websaasai/speechaccentkaggle) + [README.md - EDA Section](./README.md#-exploratory-data-analysis)
+**Where to check**: [SpeechAccent_EDA.ipynb](./SpeechAccent_EDA.ipynb open on google collab, no preview on github - or open https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link) + [Further EDA, Feature Importance and Training Notebook](https://www.kaggle.com/code/websaasai/speechaccentkaggle) + [README.md - EDA Section](./README.md#-exploratory-data-analysis)
 
 **What's included**:
 - ✅ Class distribution analysis (3.4:1 imbalance discovered)
@@ -221,7 +221,7 @@ Deployed to cloud with public URL and clear deployment documentation
 |------|---------|----------|
 | **README.md** | Main project documentation | [Link](./README.md) |
 | **EVALUATION.md** | This file | [Link](./EVALUATION.md) |
-| **SpeechAccent_EDA.ipynb** | Exploratory data analysis | [Link](./SpeechAccent_EDA.ipynb) |
+| **SpeechAccent_EDA.ipynb** | Exploratory data analysis | [Link](./SpeechAccent_EDA.ipynb open in google collab - no preview on github use https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link) |
 | **speechaccentkaggle.ipynb** | Model training (Kaggle) | [Link](https://www.kaggle.com/code/websaasai/speechaccentkaggle) |
 | **train.py** | Training script | [Link](./train.py) |
 | **app.py** | Gradio web interface | [Link](./app.py) |
