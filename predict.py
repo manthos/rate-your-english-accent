@@ -274,10 +274,10 @@ Examples:
     print(f"   English:     {results['raw_probabilities']['english']:.2%} (threshold: {args.threshold:.0%})")
     print(f"   Non-English: {results['raw_probabilities']['non_english']:.2%}")
     
-    print(f"\n📊 Calibrated Probabilities (Balanced Dataset Equivalent):")
+    print(f"\n📊 Calibrated Probabilities (If Dataset Were Balanced 50:50):")
     print(f"   English:     {results['calibrated_probabilities']['english']:.2%}")
     print(f"   Non-English: {results['calibrated_probabilities']['non_english']:.2%}")
-    print(f"   (Adjusted to compensate for 3.4:1 training imbalance)")
+    print(f"   (Shows what probabilities would be if trained on equal class sizes)")
     
     print(f"\n🎯 Decision:")
     print(f"   Threshold: {args.threshold} (calibrated for 3.4:1 class imbalance)")

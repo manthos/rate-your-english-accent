@@ -105,14 +105,14 @@ def predict_accent(audio):
         non_english_prob_raw = probs[0, 0].item()
         english_prob_raw = probs[0, 1].item()
         
-        # Calibrate probabilities to balanced dataset (for display only)
-        # Training ratio: 3.4:1 (Non-English:English) → prior=0.227
-        # Balanced ratio: 1:1 → prior=0.5
-        # Adjustment factor: 0.5 / 0.227 ≈ 2.2 for English, 0.5 / 0.773 ≈ 0.65 for Non-English
+        # Calibrate probabilities using Bayesian adjustment
+        # Training ratio: 3.4:1 (Non-English:English) means model is biased toward Non-English
+        # We adjust TO a balanced prior (50:50) for more intuitive interpretation
         TRAIN_PRIOR_ENGLISH = 0.227
         TRAIN_PRIOR_NON_ENGLISH = 0.773
         BALANCED_PRIOR = 0.5
         
+        # Apply Bayes' theorem: P(class|features, balanced) ∝ P(class|features, imbalanced) * (balanced_prior / train_prior)
         english_adjusted = english_prob_raw * (BALANCED_PRIOR / TRAIN_PRIOR_ENGLISH)
         non_english_adjusted = non_english_prob_raw * (BALANCED_PRIOR / TRAIN_PRIOR_NON_ENGLISH)
         
@@ -121,36 +121,36 @@ def predict_accent(audio):
         english_prob_calibrated = english_adjusted / total
         non_english_prob_calibrated = non_english_adjusted / total
         
-        # Prediction (using raw probabilities with calibrated threshold)
-        # Threshold = 1/(1+3.4) ≈ 0.23 compensates for training distribution
-        THRESHOLD = 0.23  # Calibrated to 3.4:1 training ratio
+        # Prediction (using raw probabilities with adjusted threshold)
+        # Threshold = 1/(1+3.4) ≈ 0.23 compensates for training imbalance
+        THRESHOLD = 0.23
         predicted_class = "English" if english_prob_raw > THRESHOLD else "Non-English"
         
-        # Use calibrated probability for confidence assessment (more intuitive for users)
-        confidence_calibrated = max(english_prob_calibrated, non_english_prob_calibrated)
+        # Confidence assessment based on how far from threshold (using raw probabilities)
+        confidence_raw = max(english_prob_raw, non_english_prob_raw)
         
         # Format output
         result = f"## 🎤 Prediction: **{predicted_class}**\n\n"
         
-        result += f"### Model Output (Raw Probabilities):\n"
+        result += f"### Model Output (Raw):\n"
         result += f"- English: **{english_prob_raw:.1%}** (threshold: 23%)\n"
         result += f"- Non-English: **{non_english_prob_raw:.1%}**\n\n"
         
-        result += f"### Calibrated for Balanced Dataset:\n"
+        result += f"### Calibrated Probabilities (If Dataset Were Balanced 50:50):\n"
         result += f"- English: **{english_prob_calibrated:.1%}**\n"
         result += f"- Non-English: **{non_english_prob_calibrated:.1%}**\n"
-        result += f"*(Adjusted to compensate for 3.4:1 training imbalance)*\n\n"
+        result += f"*(Shows what probabilities would be if trained on equal class sizes)*\n\n"
         
-        # Confidence assessment (using calibrated probabilities for intuitive interpretation)
-        if 0.20 <= english_prob_raw <= 0.40:
-            result += "⚠️ **BORDERLINE** - Close to decision boundary (23% threshold)\n"
-            result += "💡 Audio characteristics may differ from training data sources\n"
-        elif confidence_calibrated > 0.85:
-            result += "✅ **HIGH CONFIDENCE** - Very clear accent characteristics"
-        elif confidence_calibrated > 0.65:
-            result += "⚠️ **MEDIUM CONFIDENCE** - Detectable but not strong"
+        # Confidence assessment based on distance from decision boundary
+        if 0.18 <= english_prob_raw <= 0.28:
+            result += "⚠️ **BORDERLINE** - Very close to decision boundary (23% threshold)\n"
+            result += "💡 Consider recording in similar conditions to training data\n"
+        elif confidence_raw > 0.85:
+            result += "✅ **HIGH CONFIDENCE** - Very clear accent patterns detected"
+        elif confidence_raw > 0.65:
+            result += "✅ **MEDIUM CONFIDENCE** - Clear but not extreme patterns"
         else:
-            result += "⚠️ **LOW CONFIDENCE** - Near decision boundary"
+            result += "⚠️ **MODERATE CONFIDENCE** - Detectable patterns but less pronounced"
         
         # Probability chart data (using calibrated probabilities for visualization)
         prob_dict = {
