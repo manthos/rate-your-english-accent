@@ -470,10 +470,14 @@ See [requirements.txt](./requirements.txt) for full list.
 
 ## 📜 License
 
-- **Code**: MIT License
-- **Dataset**: CC BY-NC-SA 4.0
-- **Model**: CC BY-NC-SA 4.0
-- **Test Samples**: CC BY-NC-SA 4.0 (some generated from Speech Accent Archive dataset)
+**CC BY-NC-SA 4.0** (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International)
+
+- **All Project Components**: CC BY-NC-SA 4.0
+  - Source code
+  - Trained model
+  - Dataset and mel-spectrograms
+  - Test samples
+  - Documentation
 
 **Attribution**:
 - Original Dataset: Speech Accent Archive (George Mason University)

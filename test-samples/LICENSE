@@ -1,1 +1,17 @@
-CC BY-NC-SA 4.0 (note some generated from Speech Accent Archive dataset)
+# Test Samples License
+
+## Files from Speech Accent Archive Dataset
+**License**: CC BY-NC-SA 4.0
+**Source**: Speech Accent Archive, George Mason University
+**Files**: 
+- cantonese8.wav, dutch16.wav, english108.wav, english466.wav, english559.wav, english61.wav, farsi5.wav, french55.wav, german11.wav, german25.wav
+- irishfromset.mp3, italianfromset.mp3, koreanfromset.mp3
+
+## Synthetic Samples (Azure Text-to-Speech)
+**Service**: Microsoft Azure Cognitive Services - Text-to-Speech
+**License**: Generated for educational/testing purposes
+**Files**:
+- en-US-EricNeural.mp3 (US English Neural Voice)
+- en-PH-JamesNeural.mp3 (Philippine English Neural Voice)
+
+**Note**: Azure TTS output can be used freely for testing/development. For commercial use, refer to [Microsoft's Azure TTS licensing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/speech-services/).

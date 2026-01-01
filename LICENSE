@@ -1,0 +1,64 @@
+# License
+
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**
+
+Copyright (c) 2025 manthos
+
+**Applies to**: All project components
+- Source code (`.py`, `.sh`, configuration files)
+- Trained model file (`accent_classifier_traced.pt`)
+- Dataset and mel-spectrogram files
+- Test samples (see [test-samples/LICENSE](test-samples/LICENSE) for detailed attribution)
+- Documentation and notebooks
+
+---
+
+**Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**
+
+This is a human-readable summary of (and not a substitute for) the license.
+Full license: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+### You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material
+
+### Under the following terms:
+
+- **Attribution** — You must give appropriate credit to:
+  - Original Dataset: Speech Accent Archive (George Mason University)
+  - Dataset Processing: WebSaasAi (CodecSR)
+  - This Project: manthos/rate-your-english-accent
+  
+- **NonCommercial** — You may not use the material for commercial purposes.
+
+- **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
+- **No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+### Attribution Requirements:
+
+When using the model or dataset, please cite:
+
+```
+Dataset: Speech Accent Archive, George Mason University
+Processing: WebSaasAi (CodecSR pipeline)
+Kaggle Dataset: https://www.kaggle.com/datasets/websaasai/speech-accent
+Model Training: https://github.com/manthos/rate-your-english-accent
+License: CC BY-NC-SA 4.0
+```
+
+---
+
+## Summary
+
+- ⚠️ **NON-COMMERCIAL USE ONLY** - No commercial use permitted
+- 📝 **Attribution Required** - Must credit original sources
+- 🔄 **ShareAlike** - Derivatives must use same CC BY-NC-SA 4.0 license
+- ✅ **Free for Education & Research** - Ideal for academic and learning purposes
+
+---
+
+## Questions?
+
+For licensing questions, open an issue at: https://github.com/manthos/rate-your-english-accent/issues
