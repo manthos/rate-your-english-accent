@@ -1,0 +1,44 @@
+#!/bin/bash
+# deploy_cloud_run.sh - Deploy to Google Cloud Run
+
+set -e
+
+PROJECT_ID="your-gcp-project-id"
+REGION="us-central1"
+SERVICE_NAME="accent-classifier"
+IMAGE_NAME="gcr.io/${PROJECT_ID}/${SERVICE_NAME}"
+
+echo "🚀 Deploying Accent Classifier to Google Cloud Run"
+echo "=================================================="
+
+# 1. Build Docker image
+echo "📦 Building Docker image..."
+docker build -t ${IMAGE_NAME}:latest .
+
+# 2. Push to Google Container Registry
+echo "📤 Pushing to GCR..."
+docker push ${IMAGE_NAME}:latest
+
+# 3. Deploy to Cloud Run
+echo "🌐 Deploying to Cloud Run..."
+gcloud run deploy ${SERVICE_NAME} \
+    --image ${IMAGE_NAME}:latest \
+    --platform managed \
+    --region ${REGION} \
+    --allow-unauthenticated \
+    --memory 2Gi \
+    --cpu 2 \
+    --timeout 300 \
+    --max-instances 10 \
+    --port 8000
+
+# 4. Get service URL
+SERVICE_URL=$(gcloud run services describe ${SERVICE_NAME} \
+    --region ${REGION} \
+    --format 'value(status.url)')
+
+echo "✅ Deployment complete!"
+echo "🔗 Service URL: ${SERVICE_URL}"
+echo ""
+echo "📊 Test with:"
+echo "curl ${SERVICE_URL}/health"

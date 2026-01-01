@@ -1,0 +1,62 @@
+{
+  "model_performance": {
+    "test_accuracy": 0.72,
+    "train_accuracy": 0.9970833333333333,
+    "cv_accuracy": 0.7100000000000001,
+    "cv_std": 0.014063348739819301,
+    "roc_auc": 0.7959666666666666,
+    "optimal_threshold": 0.48097768945009034
+  },
+  "separability_metrics": {
+    "separation_ratio": 1.0132837592870174,
+    "mean_inter_distance": 11.306311438330626,
+    "mean_intra_distance": 11.158090055924857,
+    "pca_variance_2d": 0.6970405115681673,
+    "pca_pc1_variance": 0.5858843801621274,
+    "pca_pc2_variance": 0.11115613140603982
+  },
+  "feature_analysis": {
+    "total_features": 72,
+    "n_features_80pct": 51,
+    "n_features_90pct": 60,
+    "n_features_95pct": 66,
+    "top_5_features": [
+      "spectral_centroid_std",
+      "spectral_rolloff_std",
+      "spectral_flatness_median",
+      "spectral_centroid_range",
+      "spectral_bandwidth_std"
+    ],
+    "top_5_importance": [
+      0.02916061419400597,
+      0.02480343548847905,
+      0.02306760823613598,
+      0.021181999981529972,
+      0.02036466567119782
+    ],
+    "top_3_separable_features": [
+      "spectral_centroid_std",
+      "spectral_rolloff_std",
+      "spectral_centroid_range"
+    ],
+    "top_3_separable_scores": [
+      0.24073803659976825,
+      0.21609005755996077,
+      0.2115182053398616
+    ]
+  },
+  "dataset_info": {
+    "total_samples": 3000,
+    "english_samples": 1500,
+    "non_english_samples": 1500,
+    "train_samples": 2400,
+    "test_samples": 600
+  },
+  "model_recommendation": {
+    "baseline": "Random Forest",
+    "baseline_accuracy": 0.72,
+    "expected_cnn_range": "78-85%",
+    "expected_wav2vec2_range": "82-90%",
+    "recommendation": "CNN on mel-spectrograms"
+  }
+}

@@ -1,0 +1,31 @@
+feature,importance,category
+spectral_centroid_std,0.02916061419400597,Spectral Centroid
+spectral_rolloff_std,0.02480343548847905,Spectral Rolloff
+spectral_flatness_median,0.02306760823613598,Spectral Flatness
+spectral_centroid_range,0.021181999981529972,Spectral Centroid
+spectral_bandwidth_std,0.02036466567119782,Spectral Bandwidth
+energy_delta_mean,0.019713174542969385,Energy Features
+spectral_flatness_mean,0.018252526033573923,Spectral Flatness
+spectral_std,0.018159302722650473,Spectral Statistics
+energy_acceleration_mean,0.01776000061581887,Energy Features
+formant_ratio,0.017701329332749934,Formant Features
+spectral_flatness_std,0.017459462755847307,Spectral Flatness
+spectral_contrast_mean,0.01722200545076125,Spectral Contrast
+energy_delta_std,0.01685476385488848,Energy Features
+spectral_contrast_range,0.0168273135850707,Spectral Contrast
+spectral_p25,0.016726217466997848,Spectral Statistics
+temporal_min,0.016584524428512055,Temporal Features
+mid_to_total_ratio,0.016433041455828395,Other
+energy_acceleration_std,0.016107933103996774,Energy Features
+spectral_contrast_std,0.01608772604891944,Spectral Contrast
+spectral_bandwidth_mean,0.01606982214063814,Spectral Bandwidth
+spectral_flux_mean,0.015983033209787976,Spectral Flux
+zero_crossing_std,0.015976538765975105,Zero Crossing
+spectral_rolloff_mean,0.01595407807870854,Spectral Rolloff
+spectral_flux_max,0.015470022006255848,Spectral Flux
+spectral_flux_std,0.015193239318956237,Spectral Flux
+spectral_centroid_mean,0.015032926672478204,Spectral Centroid
+formant1_variation,0.015007214179569402,Formant Features
+spectral_kurtosis,0.014935681981297912,Spectral Statistics
+temporal_kurtosis,0.014873529952467589,Temporal Features
+pitch_range,0.014636429408675468,Pitch Features

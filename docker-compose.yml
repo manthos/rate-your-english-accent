@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  accent-classifier:
+    build: .
+    container_name: accent-classifier-api
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_PATH=/app/accent_classifier_traced.pt
+    volumes:
+      - ./audio_samples:/app/audio_samples
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

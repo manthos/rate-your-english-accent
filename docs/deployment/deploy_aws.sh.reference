@@ -1,0 +1,23 @@
+#!/bin/bash
+# deploy_aws.sh - Deploy to AWS Elastic Beanstalk
+
+set -e
+
+APP_NAME="accent-classifier"
+ENV_NAME="accent-classifier-env"
+REGION="us-east-1"
+
+echo "🚀 Deploying to AWS Elastic Beanstalk"
+
+# 1. Initialize EB CLI
+eb init -p docker ${APP_NAME} --region ${REGION}
+
+# 2. Create environment (first time only)
+# eb create ${ENV_NAME} --instance-type t3.medium --single
+
+# 3. Deploy
+eb deploy ${ENV_NAME}
+
+# 4. Get URL
+EB_URL=$(eb status ${ENV_NAME} | grep CNAME | awk '{print $2}')
+echo "✅ Deployed to: http://${EB_URL}"

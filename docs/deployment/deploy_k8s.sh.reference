@@ -1,0 +1,39 @@
+#!/bin/bash
+# deploy_k8s.sh - Deploy to Kubernetes
+
+set -e
+
+echo "🚀 Deploying to Kubernetes"
+
+# Option A: Local Minikube
+if command -v minikube &> /dev/null; then
+    echo "📦 Using Minikube..."
+    eval $(minikube docker-env)
+    docker build -t accent-classifier:latest .
+    kubectl apply -f k8s-deployment.yaml
+    
+    echo "⏳ Waiting for deployment..."
+    kubectl wait --for=condition=available --timeout=300s deployment/accent-classifier
+    
+    # Get service URL
+    SERVICE_URL=$(minikube service accent-classifier-service --url)
+    echo "✅ Service URL: ${SERVICE_URL}"
+    echo "Test: curl ${SERVICE_URL}/health"
+fi
+
+# Option B: Cloud Kubernetes (GKE/EKS/AKS)
+if command -v kubectl &> /dev/null && [[ -z $(command -v minikube) ]]; then
+    echo "📦 Using Cloud Kubernetes..."
+    
+    # Build and push to registry (example: GCR)
+    docker build -t gcr.io/YOUR_PROJECT/accent-classifier:latest .
+    docker push gcr.io/YOUR_PROJECT/accent-classifier:latest
+    
+    # Update k8s-deployment.yaml with pushed image, then:
+    kubectl apply -f k8s-deployment.yaml
+    kubectl wait --for=condition=available --timeout=300s deployment/accent-classifier
+    
+    # Get external IP
+    echo "⏳ Waiting for external IP..."
+    kubectl get service accent-classifier-service --watch
+fi
