@@ -34,6 +34,7 @@
 
 ---
 
+<a name="problem-description"></a>
 ## 🎯 Problem Description
 
 ### **The Challenge**
@@ -80,6 +81,7 @@ Binary classifier that detects whether a speaker has a native English accent or 
 
 ---
 
+<a name="dataset"></a>
 ## 📊 Dataset
 
 ### **Important Note for Evaluation**
@@ -132,6 +134,7 @@ Preprocessing and extensive EDA for our dataset creation documented in [notebook
 
 ---
 
+<a name="exploratory-data-analysis"></a>
 ## 🔍 Exploratory Data Analysis
 
 **Google Collab Notebook**: Preprocessing and extensive EDA for our dataset creation documented in [notebook.ipynb](view) or [SpeechAccent_EDA.ipynb](open in google collab) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link)
@@ -196,6 +199,7 @@ This analysis validated our CNN approach, which achieved **+17.6% improvement** 
 
 ---
 
+<a name="model-training"></a>
 ## 🧠 Model Training
 
 **Training Kaggle Notebook**: [speechaccentkaggle.ipynb](https://www.kaggle.com/code/websaasai/speechaccentkaggle) on Kaggle
@@ -260,6 +264,7 @@ These augmentation strategies contributed to:
 
 ---
 
+<a name="model-performance"></a>
 ## 📈 Model Performance
 
 ### **Final Model Metrics**
@@ -293,6 +298,7 @@ Actual Non-Eng   1,768      95      (94.9% recall)
 
 ---
 
+<a name="quick-start"></a>
 ## 🚀 Quick Start
 
 ### **Option 1: Live Demo** (Fastest)
@@ -332,6 +338,7 @@ python predict.py path/to/audio.wav
 
 ---
 
+<a name="installation--setup"></a>
 ## 💻 Installation & Setup
 
 ### **Prerequisites**
@@ -369,6 +376,7 @@ Download `accent_classifier_traced.pt` (43MB):
 
 ---
 
+<a name="reproducibility"></a>
 ## 🔄 Reproducibility
 
 ### **Full Reproduction**
@@ -391,6 +399,7 @@ Download `accent_classifier_traced.pt` (43MB):
 
 ---
 
+<a name="model-deployment"></a>
 ## 🌐 Model Deployment
 
 ### **Gradio Web Interface**
@@ -406,6 +415,7 @@ Download `accent_classifier_traced.pt` (43MB):
 
 ---
 
+<a name="containerization"></a>
 ## 🐳 Containerization
 
 ### **Build & Run**
@@ -427,6 +437,7 @@ https://hub.docker.com/r/mattkappa/rate-your-english-accent
 
 ---
 
+<a name="cloud-deployment"></a>
 ## ☁️ Cloud Deployment
 
 ### **HuggingFace Spaces**
@@ -445,6 +456,7 @@ See [docs/deployment/](./deployment/) for guides.
 
 ---
 
+<a name="project-structure"></a>
 ## 📁 Project Structure
 
 ```
@@ -466,6 +478,7 @@ rate-your-english-accent/
 
 ---
 
+<a name="technology-stack"></a>
 ## 🛠️ Technology Stack
 
 - **ML**: PyTorch 2.1.0, torchvision, torchaudio
@@ -477,6 +490,7 @@ See [requirements.txt](./requirements.txt) for full list.
 
 ---
 
+<a name="license"></a>
 ## 📜 License
 
 **CC BY-NC-SA 4.0** (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International)
