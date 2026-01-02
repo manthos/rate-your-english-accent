@@ -14,7 +14,7 @@
 📊 For project evaluation criteria mapping, see [EVALUATION.md](./EVALUATION.md)
 
 ---
-
+<a name="table-of-contents"></a>
 ## 📋 Table of Contents
 
 - [Problem Description](#problem-description)
@@ -79,6 +79,8 @@ Binary classifier that detects whether a speaker has a native English accent or 
 - **Production-Ready**: Dockerized, cloud-deployed, API accessible
 - **Transparent**: Shows both raw and calibrated confidence scores
 
+[⬆️ Back to Contents](#table-of-contents)
+
 ---
 
 <a name="dataset"></a>
@@ -131,6 +133,8 @@ Preprocessing and extensive EDA for our dataset creation documented in [notebook
 4. **Mel-Spectrogram Generation**: 16kHz, N-FFT=400, hop=160, 80 mels
 5. **dB Scale Conversion**: AmplitudeToDB transform
 6. **Export**: Saved as .npy arrays with metadata
+
+[⬆️ Back to Contents](#table-of-contents)
 
 ---
 
@@ -197,6 +201,8 @@ Before training deep learning models, we performed feature importance analysis u
 
 This analysis validated our CNN approach, which achieved **+17.6% improvement** (72% → 89.6%).
 
+[⬆️ Back to Contents](#table-of-contents)
+
 ---
 
 <a name="model-training"></a>
@@ -262,6 +268,8 @@ These augmentation strategies contributed to:
 
 **Training Script Exported**: [train.py](./train.py)
 
+[⬆️ Back to Contents](#table-of-contents)
+
 ---
 
 <a name="model-performance"></a>
@@ -295,6 +303,8 @@ Actual Non-Eng   1,768      95      (94.9% recall)
 - **Class imbalance impact**: Model more confident with Non-English
 - **Calibration applied**: Threshold adjusted to 23% (from 50%)
 - **Bayesian recalibration**: Adjusts for 3.4:1 training ratio
+
+[⬆️ Back to Contents](#table-of-contents)
 
 ---
 
@@ -336,6 +346,8 @@ python predict.py test-samples/english108.wav
 python predict.py path/to/audio.wav
 ```
 
+[⬆️ Back to Contents](#table-of-contents)
+
 ---
 
 <a name="installation--setup"></a>
@@ -374,6 +386,8 @@ Download `accent_classifier_traced.pt` (43MB):
 2. From GitHub Releases  
 3. Train from scratch on gpu: `python train.py`
 
+[⬆️ Back to Contents](#table-of-contents)
+
 ---
 
 <a name="reproducibility"></a>
@@ -397,6 +411,8 @@ Download `accent_classifier_traced.pt` (43MB):
 - ✅ Training script runs successfully
 - ✅ Deterministic results (torch.manual_seed=42)
 
+[⬆️ Back to Contents](#table-of-contents)
+
 ---
 
 <a name="model-deployment"></a>
@@ -412,6 +428,8 @@ Download `accent_classifier_traced.pt` (43MB):
 - Real-time prediction
 - Dual probabilities (raw + calibrated)
 - Confidence assessment
+
+[⬆️ Back to Contents](#table-of-contents)
 
 ---
 
@@ -435,6 +453,8 @@ docker run -d -p 7860:7860 --name accent-classifier rate-your-english-accent:lat
 
 https://hub.docker.com/r/mattkappa/rate-your-english-accent
 
+[⬆️ Back to Contents](#table-of-contents)
+
 ---
 
 <a name="cloud-deployment"></a>
@@ -453,6 +473,8 @@ https://hub.docker.com/r/mattkappa/rate-your-english-accent
 - Kubernetes
 
 See [docs/deployment/](./deployment/) for guides.
+
+[⬆️ Back to Contents](#table-of-contents)
 
 ---
 
@@ -476,6 +498,8 @@ rate-your-english-accent/
 └── deployment/                        # Cloud guides
 ```
 
+[⬆️ Back to Contents](#table-of-contents)
+
 ---
 
 <a name="technology-stack"></a>
@@ -487,6 +511,8 @@ rate-your-english-accent/
 - **Development**: Jupyter, Kaggle, Google Colab
 
 See [requirements.txt](./requirements.txt) for full list.
+
+[⬆️ Back to Contents](#table-of-contents)
 
 ---
 
@@ -507,6 +533,8 @@ See [requirements.txt](./requirements.txt) for full list.
 - Dataset Processing: WebSaasAi (CodecSR)
 - Kaggle Dataset: https://www.kaggle.com/datasets/websaasai/speech-accent
 - Test Samples: Audio files in `test-samples/` directory contains some generated from the Speech Accent Archive dataset, licensed under CC BY-NC-SA 4.0
+
+[⬆️ Back to Contents](#table-of-contents)
 
 ---
 
