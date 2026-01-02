@@ -9,7 +9,7 @@
 
 > **ML Zoomcamp 2025 Capstone Project** - Deep learning accent binary classifier using ResNet18 CNN on mel-spectrograms
 
-**🎯 Live Demo**: [HuggingFace Space](https://huggingface.co/spaces/manthos/rate-your-english-accent) | [GitHub Repo](https://github.com/manthos/rate-your-english-accent)
+**🎯 Live Demo**: [HuggingFace Space](https://huggingface.co/spaces/mattkaz/rate-your-english-accent) | [GitHub Repo](https://github.com/manthos/rate-your-english-accent)
 
 📊 For project evaluation criteria mapping, see [EVALUATION.md](./EVALUATION.md)
 
@@ -125,7 +125,7 @@ This repository contains 3 notebooks not one per project suggestion.
 
 ### **Preprocessing Pipeline**
 
-Preprocessing and extensive EDA for our dataset creation documented in [notebook.ipynb](view) or [SpeechAccent_EDA.ipynb](open in google collab) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link). This is part of our EDA that shows how our dataset is constructed. Dataset published on Kaggle for reproducibility:
+Preprocessing and extensive EDA for our dataset creation documented in [notebook.ipynb](./notebook.ipynb) or [SpeechAccent_EDA.ipynb](./SpeechAccent_EDA.ipynb) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link). This is part of our EDA that shows how our dataset is constructed. Dataset published on Kaggle for reproducibility:
 
 1. **Audio Loading**: torchaudio library, mono conversion
 2. **Silence Removal**: CodecSR-based voice activity detection
@@ -141,7 +141,7 @@ Preprocessing and extensive EDA for our dataset creation documented in [notebook
 <a name="exploratory-data-analysis"></a>
 ## 🔍 Exploratory Data Analysis
 
-**Google Collab Notebook**: Preprocessing and extensive EDA for our dataset creation documented in [notebook.ipynb](view) or [SpeechAccent_EDA.ipynb](open in google collab) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link)
+**Google Collab Notebook**: Preprocessing and extensive EDA for our dataset creation documented in [notebook.ipynb](./notebook.ipynb) or [SpeechAccent_EDA.ipynb](./SpeechAccent_EDA.ipynb) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link)
 
 ### **Key Findings**
 
@@ -313,7 +313,7 @@ Actual Non-Eng   1,768      95      (94.9% recall)
 
 ### **Option 1: Live Demo** (Fastest)
 
-Visit [HuggingFace Space](https://huggingface.co/spaces/manthos/rate-your-english-accent)
+Visit [HuggingFace Space](https://huggingface.co/spaces/mattkaz/rate-your-english-accent)
 
 ### **Option 2: Docker**
 
@@ -397,7 +397,7 @@ Download `accent_classifier_traced.pt` (43MB):
 
 1. **Clone repo**: `git clone https://github.com/manthos/rate-your-english-accent.git`
 2. **Download dataset**: From Kaggle
-3. **Run EDA**: Open [notebook.ipynb](view) or [SpeechAccent_EDA.ipynb](open in google collab) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link)
+3. **Run EDA**: Open [notebook.ipynb](./notebook.ipynb) or [SpeechAccent_EDA.ipynb](./SpeechAccent_EDA.ipynb) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link)
 4. **Train model**: Run `speechaccentkaggle.ipynb` on Kaggle (GPU: T4 x2, ~2 hours)
 5. **Test**: `python predict.py test-samples/english108.wav`
 6. **Deploy**: `python app.py`
@@ -462,7 +462,7 @@ https://hub.docker.com/r/mattkappa/rate-your-english-accent
 
 ### **HuggingFace Spaces**
 
-**Live**: [https://huggingface.co/spaces/manthos/rate-your-english-accent](https://huggingface.co/spaces/manthos/rate-your-english-accent)
+**Live**: [https://huggingface.co/spaces/mattkaz/rate-your-english-accent](https://huggingface.co/spaces/mattkaz/rate-your-english-accent)
 
 **Features**: 100% free, public URL, auto-HTTPS, Gradio auto-rendered
 
@@ -558,8 +558,8 @@ See [requirements.txt](./requirements.txt) for full list.
 
 ## 📚 Resources
 
-- [Live Demo](https://huggingface.co/spaces/manthos/rate-your-english-accent)
-- [Initial EDA Google Collab Notebook](Preprocessing and extensive EDA for our dataset creation documented in [notebook.ipynb](view) or [SpeechAccent_EDA.ipynb](open in google collab) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link)
+- [Live Demo](https://huggingface.co/spaces/mattkaz/rate-your-english-accent)
+- [Initial EDA Google Collab Notebook - notebook.ipynb](./notebook.ipynb) or [SpeechAccent_EDA.ipynb](./SpeechAccent_EDA.ipynb) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link
 - [Further EDA, Feature Importance and Training Notebook](https://www.kaggle.com/code/websaasai/speechaccentkaggle)
 - [Dataset](https://www.kaggle.com/datasets/websaasai/speech-accent)
 - [Original Archive](https://accent.gmu.edu/)

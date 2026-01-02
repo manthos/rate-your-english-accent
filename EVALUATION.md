@@ -24,7 +24,7 @@ This document maps the project deliverables to the ML Zoomcamp 2025 Capstone eva
 Extensive EDA with class analysis, value ranges, missing values, plus comprehensive feature importance analysis were performed.
 
 **Where to check**: 
-[./notebook.ipynb](view) or [SpeechAccent_EDA.ipynb](open in google collab not github viewable) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link) 
+[./notebook.ipynb](./notebook.ipynb) or [SpeechAccent_EDA.ipynb](./SpeechAccent_EDA.ipynb) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link) 
 + [Further EDA, Feature Importance and Training Notebook](https://www.kaggle.com/code/websaasai/speechaccentkaggle) 
 + [README.md - EDA Section](./README.md#exploratory-data-analysis)
 
@@ -176,7 +176,7 @@ Deployed to cloud with public URL and clear deployment documentation
 
 **What's included**:
 - ✅ **Deployment platform**: HuggingFace Spaces (free tier)
-- ✅ **Live URL**: https://huggingface.co/spaces/manthos/rate-your-english-accent
+- ✅ **Live URL**: https://huggingface.co/spaces/mattkaz/rate-your-english-accent
 - ✅ **Deployment guide**: Step-by-step instructions in README
 - ✅ **Testing instructions**: How to use the deployed service
 - ✅ **Alternative platforms**: Google Cloud Run, AWS guides in `docs/deployment/`
@@ -224,8 +224,8 @@ Deployed to cloud with public URL and clear deployment documentation
 |------|---------|----------|
 | **README.md** | Main project documentation | [Link](./README.md) |
 | **EVALUATION.md** | This file | [Link](./EVALUATION.md) |
-| **SpeechAccent_EDA.ipynb** | Exploratory data analysis | [Link](./SpeechAccent_EDA.ipynb open in google collab - no preview on github or use direct shared link for the duration of project https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link) |
-| **notebook.ipynb** | The above notebook but viewable on Github | [Link] (./notebook.ipynb) |
+| **SpeechAccent_EDA.ipynb** | Exploratory data analysis | [Link](./SpeechAccent_EDA.ipynb) - Open in Google Colab: https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link |
+| **notebook.ipynb** | The above notebook but viewable on Github | [Link](./notebook.ipynb) |
 | **speechaccentkaggle.ipynb** | Model training (Kaggle) | [Link](https://www.kaggle.com/code/websaasai/speechaccentkaggle) |
 | **train.py** | Training script | [Link](./train.py) |
 | **app.py** | Gradio web interface | [Link](./app.py) |
@@ -243,4 +243,4 @@ For questions about this project:
 
 - **GitHub**: [@manthos](https://github.com/manthos)
 - **Project**: [rate-your-english-accent](https://github.com/manthos/rate-your-english-accent)
-- **Live Demo**: [HuggingFace Space](https://huggingface.co/spaces/manthos/rate-your-english-accent)
+- **Live Demo**: [HuggingFace Space](https://huggingface.co/spaces/mattkaz/rate-your-english-accent)
