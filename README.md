@@ -540,6 +540,8 @@ See [requirements.txt](./requirements.txt) for full list.
 
 ## 📧 Contact
 
+For evaluation or project questions contact: 
+
 **Author**: manthos
 - GitHub: [@manthos](https://github.com/manthos)
 - Project: [rate-your-english-accent](https://github.com/manthos/rate-your-english-accent)
