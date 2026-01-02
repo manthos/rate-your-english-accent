@@ -82,6 +82,14 @@ Binary classifier that detects whether a speaker has a native English accent or 
 
 ## 📊 Dataset
 
+### **Important Note for Evaluation**
+This repository contains 3 notebooks not one per project suggestion.
+- The first notebook is ./SpeechAccent_EDA.ipynb this is a Google Collab notebook that cannot be viewed on Github (known issue https://stackoverflow.com/questions/79661958/jupyter-notebook-rendering-error-state-key-missing-from-metadata-widgets-de ). This is where part of our EDA and the creation of our Kaggle dataset lies. I have shared it for the duration of the class so you can open in Google Collab directly if you like - use this link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link
+
+- The second notebook is ./notebook.ipynb which is the same as ./SpeechAccent_EDA.ipynb but converted (as per stackoverflow link above) so it can display on Github (added metadata on notebook)
+
+- The third notebook is ./speechaccentkaggle.ipynb. This a Kaggle notebook that we use to continue our EDA, do feature importance analysis, train the models and everything else for the project. (Our Google Collab GPU run out)
+
 ### **Source**
 
 - **Original**: [Speech Accent Archive](https://accent.gmu.edu/) - George Mason University
@@ -113,7 +121,7 @@ Binary classifier that detects whether a speaker has a native English accent or 
 
 ### **Preprocessing Pipeline**
 
-Complete preprocessing extensive EDA documented in [SpeechAccent_EDA.ipynb](./SpeechAccent_EDA.ipynb open in google collab, cannot be previewed in whole on github, use this link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link) that shows how our dataset is constructed. Dataset published on Kaggle for reproducibility:
+Preprocessing and extensive EDA for our dataset creation documented in [notebook.ipynb](view) or [SpeechAccent_EDA.ipynb](open in google collab) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link). This is part of our EDA that shows how our dataset is constructed. Dataset published on Kaggle for reproducibility:
 
 1. **Audio Loading**: torchaudio library, mono conversion
 2. **Silence Removal**: CodecSR-based voice activity detection
@@ -126,7 +134,7 @@ Complete preprocessing extensive EDA documented in [SpeechAccent_EDA.ipynb](./Sp
 
 ## 🔍 Exploratory Data Analysis
 
-**Google Collab Notebook**: [SpeechAccent_EDA.ipynb](./SpeechAccent_EDA.ipynb open in google collab - no preview on github use link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link)
+**Google Collab Notebook**: Preprocessing and extensive EDA for our dataset creation documented in [notebook.ipynb](view) or [SpeechAccent_EDA.ipynb](open in google collab) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link)
 
 ### **Key Findings**
 
@@ -367,7 +375,7 @@ Download `accent_classifier_traced.pt` (43MB):
 
 1. **Clone repo**: `git clone https://github.com/manthos/rate-your-english-accent.git`
 2. **Download dataset**: From Kaggle
-3. **Run EDA**: Open `SpeechAccent_EDA.ipynb` open in Google Collab or use https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link
+3. **Run EDA**: Open [notebook.ipynb](view) or [SpeechAccent_EDA.ipynb](open in google collab) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link)
 4. **Train model**: Run `speechaccentkaggle.ipynb` on Kaggle (GPU: T4 x2, ~2 hours)
 5. **Test**: `python predict.py test-samples/english108.wav`
 6. **Deploy**: `python app.py`
@@ -449,7 +457,8 @@ rate-your-english-accent/
 ├── predict.py                         # CLI prediction
 ├── train.py                           # Training script
 ├── accent_classifier_traced.pt        # Trained model (43MB)
-├── SpeechAccent_EDA.ipynb            # EDA notebook open in Google Collab or use link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link
+├── SpeechAccent_EDA.ipynb            # EDA notebook (save and open in Google Collab or use link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link)
+├── notebook.ipynb                    # The above notebook but viewable on Github
 ├── speechaccentkaggle.ipynb          # Training notebook
 ├── test-samples/                      # Sample audio files some generated from Speech Accent Archive dataset
 └── deployment/                        # Cloud guides
@@ -508,7 +517,7 @@ See [requirements.txt](./requirements.txt) for full list.
 ## 📚 Resources
 
 - [Live Demo](https://huggingface.co/spaces/manthos/rate-your-english-accent)
-- [Initial EDA Google Collab Notebook](./SpeechAccent_EDA.ipynb open in Google collab - no preview on github use this link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link)
+- [Initial EDA Google Collab Notebook](Preprocessing and extensive EDA for our dataset creation documented in [notebook.ipynb](view) or [SpeechAccent_EDA.ipynb](open in google collab) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link)
 - [Further EDA, Feature Importance and Training Notebook](https://www.kaggle.com/code/websaasai/speechaccentkaggle)
 - [Dataset](https://www.kaggle.com/datasets/websaasai/speech-accent)
 - [Original Archive](https://accent.gmu.edu/)
