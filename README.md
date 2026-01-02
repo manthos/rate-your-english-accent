@@ -17,24 +17,24 @@
 
 ## 📋 Table of Contents
 
-- [Problem Description](#-problem-description)
-- [Dataset](#-dataset)
-- [Exploratory Data Analysis](#-exploratory-data-analysis)  
-- [Model Training](#-model-training)
-- [Model Performance](#-model-performance)
-- [Quick Start](#-quick-start)
-- [Installation & Setup](#-installation--setup)
-- [Reproducibility](#-reproducibility)
-- [Model Deployment](#-model-deployment)
-- [Containerization](#-containerization)
-- [Cloud Deployment](#-cloud-deployment)
-- [Project Structure](#-project-structure)
-- [Technology Stack](#-technology-stack)
-- [License](#-license)
+- [Problem Description](#problem-description)
+- [Dataset](#dataset)
+- [Exploratory Data Analysis](#exploratory-data-analysis)  
+- [Model Training](#model-training)
+- [Model Performance](#model-performance)
+- [Quick Start](#quick-start)
+- [Installation & Setup](#installation--setup)
+- [Reproducibility](#reproducibility)
+- [Model Deployment](#model-deployment)
+- [Containerization](#containerization)
+- [Cloud Deployment](#cloud-deployment)
+- [Project Structure](#project-structure)
+- [Technology Stack](#technology-stack)
+- [License](#license)
 
 ---
 
-## 🎯 Problem Description {#-problem-description}
+## 🎯 Problem Description
 
 ### **The Challenge**
 
@@ -80,7 +80,7 @@ Binary classifier that detects whether a speaker has a native English accent or 
 
 ---
 
-## 📊 Dataset {#-dataset}
+## 📊 Dataset
 
 ### **Important Note for Evaluation**
 This repository contains 3 notebooks not one per project suggestion.
@@ -132,7 +132,7 @@ Preprocessing and extensive EDA for our dataset creation documented in [notebook
 
 ---
 
-## 🔍 Exploratory Data Analysis {#-exploratory-data-analysis}
+## 🔍 Exploratory Data Analysis
 
 **Google Collab Notebook**: Preprocessing and extensive EDA for our dataset creation documented in [notebook.ipynb](view) or [SpeechAccent_EDA.ipynb](open in google collab) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link)
 
@@ -196,7 +196,7 @@ This analysis validated our CNN approach, which achieved **+17.6% improvement** 
 
 ---
 
-## 🧠 Model Training {#-model-training}
+## 🧠 Model Training
 
 **Training Kaggle Notebook**: [speechaccentkaggle.ipynb](https://www.kaggle.com/code/websaasai/speechaccentkaggle) on Kaggle
 
@@ -260,7 +260,7 @@ These augmentation strategies contributed to:
 
 ---
 
-## 📈 Model Performance {#-model-performance}
+## 📈 Model Performance
 
 ### **Final Model Metrics**
 
@@ -293,7 +293,7 @@ Actual Non-Eng   1,768      95      (94.9% recall)
 
 ---
 
-## 🚀 Quick Start {#-quick-start}
+## 🚀 Quick Start
 
 ### **Option 1: Live Demo** (Fastest)
 
@@ -332,7 +332,7 @@ python predict.py path/to/audio.wav
 
 ---
 
-## 💻 Installation & Setup {#-installation--setup}
+## 💻 Installation & Setup
 
 ### **Prerequisites**
 
@@ -369,7 +369,7 @@ Download `accent_classifier_traced.pt` (43MB):
 
 ---
 
-## 🔄 Reproducibility {#-reproducibility}
+## 🔄 Reproducibility
 
 ### **Full Reproduction**
 
@@ -391,7 +391,7 @@ Download `accent_classifier_traced.pt` (43MB):
 
 ---
 
-## 🌐 Model Deployment {#-model-deployment}
+## 🌐 Model Deployment
 
 ### **Gradio Web Interface**
 
@@ -406,7 +406,7 @@ Download `accent_classifier_traced.pt` (43MB):
 
 ---
 
-## 🐳 Containerization {#-containerization}
+## 🐳 Containerization
 
 ### **Build & Run**
 
@@ -427,7 +427,7 @@ https://hub.docker.com/r/mattkappa/rate-your-english-accent
 
 ---
 
-## ☁️ Cloud Deployment {#-cloud-deployment}
+## ☁️ Cloud Deployment
 
 ### **HuggingFace Spaces**
 
@@ -445,7 +445,7 @@ See [docs/deployment/](./deployment/) for guides.
 
 ---
 
-## 📁 Project Structure {#-project-structure}
+## 📁 Project Structure
 
 ```
 rate-your-english-accent/
@@ -466,7 +466,7 @@ rate-your-english-accent/
 
 ---
 
-## 🛠️ Technology Stack {#-technology-stack}
+## 🛠️ Technology Stack
 
 - **ML**: PyTorch 2.1.0, torchvision, torchaudio
 - **Web**: Gradio 5.x
@@ -477,7 +477,7 @@ See [requirements.txt](./requirements.txt) for full list.
 
 ---
 
-## 📜 License {#-license}
+## 📜 License
 
 **CC BY-NC-SA 4.0** (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International)
 

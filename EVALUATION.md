@@ -8,7 +8,7 @@ This document maps the project deliverables to the ML Zoomcamp 2025 Capstone eva
 
 ### 1. Problem Description (2 points)
 
-**Where to check**: [README.md - Problem Description](./README.md#-problem-description)
+**Where to check**: [README.md - Problem Description](./README.md#problem-description)
 
 **What's included**:
 - ✅ Clear business problem statement
@@ -26,7 +26,7 @@ Extensive EDA with class analysis, value ranges, missing values, plus comprehens
 **Where to check**: 
 [./notebook.ipynb](view) or [SpeechAccent_EDA.ipynb](open in google collab not github viewable) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link) 
 + [Further EDA, Feature Importance and Training Notebook](https://www.kaggle.com/code/websaasai/speechaccentkaggle) 
-+ [README.md - EDA Section](./README.md#-exploratory-data-analysis)
++ [README.md - EDA Section](./README.md#exploratory-data-analysis)
 
 **What's included**:
 - ✅ Class distribution analysis (3.4:1 imbalance discovered)
@@ -52,7 +52,7 @@ Extensive EDA with class analysis, value ranges, missing values, plus comprehens
 
 Multiple models trained (tree-based + CNN Baseline + Regularized + Optimized CNN pretrained), extensive parameter tuning was performed.
 
-**Where to check**: [speechaccentkaggle.ipynb](https://www.kaggle.com/code/websaasai/speechaccentkaggle) on Kaggle + [README.md - Model Training](./README.md#-model-training)
+**Where to check**: [speechaccentkaggle.ipynb](https://www.kaggle.com/code/websaasai/speechaccentkaggle) on Kaggle + [README.md - Model Training](./README.md#model-training)
 
 **Multiple Models trained**:
     -Random Forest (Baseline) for feature extraction
@@ -79,7 +79,7 @@ Multiple models trained (tree-based + CNN Baseline + Regularized + Optimized CNN
 
 Training logic fully exported to script
 
-**Where to check**: [train.py](./train.py) + [README.md - Model Training](./README.md#-model-training) + Cell 14: https://www.kaggle.com/code/websaasai/speechaccentkaggle
+**Where to check**: [train.py](./train.py) + [README.md - Model Training](./README.md#model-training) + Cell 14: https://www.kaggle.com/code/websaasai/speechaccentkaggle
 
 
 **What's included**:
@@ -98,7 +98,7 @@ Training logic fully exported to script
 
 Fully reproducible with dataset, dependencies, and clear instructions
 
-**Where to check**: [README.md - Reproducibility](./README.md#-reproducibility)
+**Where to check**: [README.md - Reproducibility](./README.md#reproducibility)
 
 **What's included**:
 - ✅ Dataset available on Kaggle with clear download instructions
@@ -118,7 +118,7 @@ Fully reproducible with dataset, dependencies, and clear instructions
 Model deployed as web service with Gradio
 Docker image for the local deployment can also be built (Dockerfile provided that deploys on localhost) and model is also deployed and running on cloud (HuggingFace)
 
-**Where to check**: [app.py](./app.py) + [README.md - Model Deployment](./README.md#-model-deployment)
+**Where to check**: [app.py](./app.py) + [README.md - Model Deployment](./README.md#model-deployment)
 
 **Implementation**:
 - ✅ **Web service**: Gradio 5.x framework
@@ -141,7 +141,7 @@ Docker image for the local deployment can also be built (Dockerfile provided tha
 
 Dependencies file provided + virtual environment instructions
 
-**Where to check**: [requirements.txt](./requirements.txt) + [README.md - Installation](./README.md#-installation--setup)
+**Where to check**: [requirements.txt](./requirements.txt) + [README.md - Installation](./README.md#installation--setup)
 
 **What's included**:
 - ✅ **Dependencies file**: `requirements.txt` with pinned versions
@@ -156,7 +156,7 @@ Dependencies file provided + virtual environment instructions
 
 Dockerfile provided, README describes build and run process
 
-**Where to check**: [Dockerfile](./Dockerfile) + [README.md - Containerization](./README.md#-containerization)
+**Where to check**: [Dockerfile](./Dockerfile) + [README.md - Containerization](./README.md#containerization)
 
 **What's included**:
 - ✅ **Dockerfile**: Complete Docker configuration
@@ -172,7 +172,7 @@ Dockerfile provided, README describes build and run process
 
 Deployed to cloud with public URL and clear deployment documentation
 
-**Where to check**: [README.md - Cloud Deployment](./README.md#-cloud-deployment) + Live URL
+**Where to check**: [README.md - Cloud Deployment](./README.md#cloud-deployment) + Live URL
 
 **What's included**:
 - ✅ **Deployment platform**: HuggingFace Spaces (free tier)
