@@ -23,7 +23,8 @@ This document maps the project deliverables to the ML Zoomcamp 2025 Capstone eva
 
 Extensive EDA with class analysis, value ranges, missing values, plus comprehensive feature importance analysis were performed.
 
-**Where to check**: [notebook.ipynb](view) or [SpeechAccent_EDA.ipynb](open in google collab not github viewable) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link) 
+**Where to check**: 
+[./notebook.ipynb](view) or [SpeechAccent_EDA.ipynb](open in google collab not github viewable) or use direct link https://colab.research.google.com/drive/1RXLOrneNayAiu3zM34W047wP8a1DjRcS?usp=drive_link) 
 + [Further EDA, Feature Importance and Training Notebook](https://www.kaggle.com/code/websaasai/speechaccentkaggle) 
 + [README.md - EDA Section](./README.md#-exploratory-data-analysis)
 
@@ -49,7 +50,7 @@ Extensive EDA with class analysis, value ranges, missing values, plus comprehens
 
 ### 3. Model Training (3 points)
 
-Multiple models trained (tree-based + CNN), extensive parameter tuning was performed.
+Multiple models trained (tree-based + CNN Baseline + Regularized + Optimized CNN pretrained), extensive parameter tuning was performed.
 
 **Where to check**: [speechaccentkaggle.ipynb](https://www.kaggle.com/code/websaasai/speechaccentkaggle) on Kaggle + [README.md - Model Training](./README.md#-model-training)
 
@@ -78,7 +79,7 @@ Multiple models trained (tree-based + CNN), extensive parameter tuning was perfo
 
 Training logic fully exported to script
 
-**Where to check**: [train.py](./train.py) + [README.md - Exporting to Script](./README.md#-exporting-to-script) + Cell 14: https://www.kaggle.com/code/websaasai/speechaccentkaggle
+**Where to check**: [train.py](./train.py) + [README.md - Model Training](./README.md#-model-training) + Cell 14: https://www.kaggle.com/code/websaasai/speechaccentkaggle
 
 
 **What's included**:
