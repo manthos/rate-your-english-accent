@@ -472,7 +472,7 @@ https://hub.docker.com/r/mattkappa/rate-your-english-accent
 - AWS Elastic Beanstalk  
 - Kubernetes
 
-See [docs/deployment/](./deployment/) for guides.
+See [docs/deployment/](./docs/deployment/) for guides.
 
 [⬆️ Back to Contents](#table-of-contents)
 
